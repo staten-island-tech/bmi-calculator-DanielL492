@@ -1,4 +1,4 @@
-//declare and defince function, input output machines
+/*//declare and defince function, input output machines
 //we can pass in arguements or parameters
 function test(mess) {
     console.log(mess);
@@ -17,13 +17,34 @@ test(y);
 
 //Boolean true or false
 const z = true;
-test(z);
+test(z);*/
 
-function add(num1, num2) {
-    console.log(num1 + num2);
+let kg = Number(prompt("What's your weight (kgs)?"));
+let cm = Number(prompt("What's your height (cm)?"));
+
+function bmi(height, weight) {
+    console.log((height / weight**2) * 10000);
+    return bmi();
 }
-let a = Number(prompt("Enter a number"));
-let b = Number(prompt("Enter another number:"));
-add(a, b);
 
+let bm = bmi();
+
+bmi(kg, cm);
+
+function calc(bm) {
+    if (bm < 18.5) {
+        console.log("You're underweight.")
+    }
+    else {
+        if (bm > 25) {
+            console.log("You're unhealthy.")
+        }
+        else {
+            console.log("You're Healthy")
+        }
+    }
+
+}
+
+calc(bm);
 

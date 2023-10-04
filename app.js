@@ -19,16 +19,15 @@ test(y);
 const z = true;
 test(z);*/
 
-let kg = Number(prompt("What's your weight (kgs)?"));
-let cm = Number(prompt("What's your height (cm)?"));
-
 function getbmi(weight, height) {
   console.log("Your BMI value is: " + ((weight / height ** 2) * 10000));
   return (weight / height ** 2) * 10000;
 }
 
-getbmi(kg, cm);
+let kg = Number(prompt("What's your weight (kgs)?"));
+let cm = Number(prompt("What's your height (cm)?"));
 
+getbmi(kg, cm);
 let bmi = getbmi(kg, cm);
 
 function calc(bmivalue) {

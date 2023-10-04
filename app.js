@@ -22,29 +22,23 @@ test(z);*/
 let kg = Number(prompt("What's your weight (kgs)?"));
 let cm = Number(prompt("What's your height (cm)?"));
 
-function bmi(height, weight) {
-    console.log((height / weight**2) * 10000);
-    return bmi();
+function getbmi(weight, height) {
+  console.log("Your BMI value is: " + ((weight / height ** 2) * 10000));
+  return (weight / height ** 2) * 10000;
 }
 
-let bm = bmi();
+getbmi(kg, cm);
 
-bmi(kg, cm);
+let bmi = getbmi(kg, cm);
 
-function calc(bm) {
-    if (bm < 18.5) {
-        console.log("You're underweight.")
-    }
-    else {
-        if (bm > 25) {
-            console.log("You're unhealthy.")
-        }
-        else {
-            console.log("You're Healthy")
-        }
-    }
-
+function calc(bmivalue) {
+  if (bmivalue < 18.5) {
+    console.log("You're underweight.");
+  } else if (bmivalue >= 25) {
+    console.log("You're unhealthy.");
+  } else {
+    console.log("You're healthy");
+  }
 }
 
-calc(bm);
-
+calc(bmi);

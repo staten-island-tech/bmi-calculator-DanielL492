@@ -19,7 +19,7 @@ test(y);
 const z = true;
 test(z);*/
 
-function getbmi(weight, height) {
+/*function getbmi(weight, height) {
   console.log("Your BMI value is: " + (weight / height ** 2) * 10000);
   return (weight / height ** 2) * 10000;
 }
@@ -35,8 +35,8 @@ function calc(bmivalue) {
   } else if (bmivalue >= 25) {
     console.log("You're unhealthy.");
   } else {
-    console.log("You're healthy");
+    console.log("You're healthy.");
   }
 }
 
-calc(bmi);
+calc(bmi);*/

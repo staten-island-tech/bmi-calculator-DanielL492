@@ -19,7 +19,7 @@ test(y);
 const z = true;
 test(z);*/
 
-/*function getbmi(weight, height) {
+function getbmi(weight, height) {
   console.log("Your BMI value is: " + (weight / height ** 2) * 10000);
   return (weight / height ** 2) * 10000;
 }
@@ -39,4 +39,4 @@ function calc(bmivalue) {
   }
 }
 
-calc(bmi);*/
+calc(bmi);

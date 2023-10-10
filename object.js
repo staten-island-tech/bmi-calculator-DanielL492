@@ -38,7 +38,9 @@
     },
 ];
 
-students.forEach((student) => console.log(student.firstName))
+const graduates = students.filter((student) => student.graduated === true);
+
+students.forEach((students) => console.log(students.firstName))
 
  //let nums = [1, 2, 3, 4, 5];
  //()=> arrow functions auto return, this key word points global
